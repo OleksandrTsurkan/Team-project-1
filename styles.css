@@ -70,6 +70,7 @@ body {
 .footer-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-link {
   margin-bottom: 40px;
@@ -139,6 +140,11 @@ body {
   fill: tomato;
   stroke: #1e2827;
 }
+.footer-policy-block-main {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .copyright-text {
   font-family: "Epilogue";
@@ -148,7 +154,6 @@ body {
   letter-spacing: -0.02em;
   color: #c6cdd1;
   opacity: 0.9;
-  margin-top: 80px;
 }
 
 .footer-policy-text {
@@ -193,9 +198,26 @@ body {
   .container {
     width: 768px;
   }
+  .footer-text-tele {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .footer-text-adress {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 152px;
+  }
+  .footer-list-item {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .footer-navigation-nav > li:not(:last-child) {
+  margin-bottom: 18px;
 }
 
-@media screen and (min-width: 1158px) {
+}
+
+@media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
   }
