@@ -100,6 +100,9 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-text-adress {
   font-family: "Epilogue";
@@ -126,11 +129,13 @@ body {
   fill: #fff;
   color: #fff;
   stroke: #ffffff;
+  transition-property: fill;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-svg:hover,
 .footer-social-svg:focus {
-  color: tomato;
   fill: tomato;
   stroke: #1e2827;
 }
@@ -143,6 +148,7 @@ body {
   letter-spacing: -0.02em;
   color: #c6cdd1;
   opacity: 0.9;
+  margin-top: 80px;
 }
 
 .footer-policy-text {
@@ -152,6 +158,28 @@ body {
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: #c6cdd1;
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-policy-block {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.footer-policy-text:hover,
+.footer-policy-text:focus {
+  color: tomato;
+  border: 1px solid tomato;
+  border-radius: 6px;
+}
+
+.footer-list-item:hover,
+.footer-list-item:focus {
+  opacity: 0.6;
+  scale: 1.2;
 }
 
 /*FOOTER MEDIA*/
